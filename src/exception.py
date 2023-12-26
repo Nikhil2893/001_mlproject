@@ -1,6 +1,11 @@
 import sys
 from src.logger import logging
 
+# Errors can be corrected during compilation of source code or even at runtime. It can syntax error or semantic error. 
+# Exceptions are caused during run time when the interpreter gets some unexpected data.
+# They are handled using try and except technique. 
+
+
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb = error_detail.exc_info()
     file_name=exc_tb.tb_frame.f_code.co_filename
